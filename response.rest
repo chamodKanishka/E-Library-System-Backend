@@ -1,0 +1,49 @@
+# 1
+# POST http://localhost:3000/api/v1/admin/adminLogin
+# Content-Type: application/json
+
+# {
+#         "email": "admin@gmail.com",
+#         "password": "test123456"
+# }
+
+# 2
+# POST http://localhost:3000/api/v1/student/studentRgister
+# Content-Type: application/json
+
+# {
+#     "name" : "Shafran",
+#     "nsbm_Id" : 100000,
+#     "faculty" : 2,
+#     "email": "shafran@gmail.com",
+#     "password": "123456"
+# }
+
+# 3
+# POST http://localhost:3000/api/v1/student/studentLogin
+# Content-Type: application/json
+
+# {
+#         "email": "shafran@gmail.com",
+#         "password": "123456"
+# }
+
+# # 4
+# POST https://168247a1.ngrok.io/api/v1/admin/addBook
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTgyMjMzYWZjYmFlZDIyYTMyNTNmMWQiLCJpYXQiOjE1ODcyNzg2ODR9.9Po50z2xPfmZnPgwqXuePVmvDhrI_jEpZZlRKTAhil0
+# Content-Type: application/json
+
+# {
+#     "title" : "Shafran NG ROK",
+#     "ISBN" : "ISBN_1000010",
+#     "author" : "Pkaya",
+#     "description": "methana description eka",
+#     "category": 1,
+#     "added_by_email": "admin@gmail.com",
+#     "no_copies": "100"
+# }
+
+
+# 5 
+GET http://localhost:3000/api/v1/admin/getBooks?category=1
+Content-Type: application/json
